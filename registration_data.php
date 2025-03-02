@@ -222,7 +222,7 @@ if ($result->num_rows > 0) {
 Number of Unique Members: " . $uniqueCount . "
 </div>";
 } else {
-    echo "<p style='text-align: center;'>No participants found.</p>";
+    echo "<p style='text-align: center;'>Zero Number of Unique participants.</p>";
 }
 
 echo "<div class='d' style='
