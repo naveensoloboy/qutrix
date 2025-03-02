@@ -8,10 +8,10 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN a2enmod rewrite
 
 # Copy project files to Apache root
-COPY . /var/www/html/
+COPY . /xampp/htdocs/New_folder/
 
 # Set proper permissions
-RUN chown -R www-data:www-data /var/www/html
+RUN chown -R www-data:www-data /xampp/htdocs/New_folder
 
 # Expose port 80
 EXPOSE 80
