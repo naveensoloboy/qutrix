@@ -1,4 +1,4 @@
-# Use the official PHP-Apache image
+# Use official PHP with Apache image
 FROM php:8.2-apache
 
 # Install required PHP extensions
@@ -7,14 +7,17 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
-# Copy project files to Apache root
-COPY . /xampp/htdocs/New_folder/
+# Set working directory to match Windows XAMPP (if needed)
+WORKDIR /var/www/html
 
-# Set proper permissions
-RUN chown -R www-data:www-data /xampp/htdocs/New_folder
+# Copy project files into the container
+COPY . /var/www/html/
 
-# Expose port 80
+# Ensure correct file permissions (important for Windows users)
+RUN chown -R www-data:www-data /var/www/html
+
+# Expose Apache port
 EXPOSE 80
 
-# Start Apache in foreground
+# Start Apache
 CMD ["apache2-foreground"]
