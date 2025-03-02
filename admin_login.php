@@ -20,8 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($admin_password==$password) { 
             $_SESSION['admin_id'] = $admin_id;
             $_SESSION['admin_username'] = $admin_username;
-            echo "<script>alert('Login successful! Redirecting...');</script>";
-            header("refresh:1;url=registration_data.php"); // Redirect to the admin dashboard
+            echo "<script>alert('Login successful! Redirecting...');window.location.href='registration_data.php';</script>"; // Redirect to the admin dashboard
         } else {
             echo "<script>alert('Invalid password!');</script>";
         }

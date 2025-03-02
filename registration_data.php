@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['admin_id'])) {
-    header("Location: admin_login_form.html");
+    echo "<script>alert('Login successful! Redirecting...');window.location.href='admin_login_form,html';</script>";
     exit();
 }
 
