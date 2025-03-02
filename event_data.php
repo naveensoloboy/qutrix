@@ -64,16 +64,16 @@ $result = $conn->query($sql);
                 <td>" . $row["events"] . "</td>
                 <td>" . $row["first_member_name"] . "</td>
                 <td>" . $row["first_member_rollno"] . "</td>
-                <td>" . (!empty($row["first_member_bonafide"]) ? "<a href='../" . htmlspecialchars($row["first_member_bonafide"]) . "' target='_blank' class='view-btn'>View</a>" : "N/A") . "</td>
+                <td>" . (!empty($row["first_member_bonafide"]) ? "<a href='" . htmlspecialchars($row["first_member_bonafide"]) . "' target='_blank' class='view-btn'>View</a>" : "N/A") . "</td>
                 <td>" . $row["second_member_name"] . "</td>
                 <td>" . $row["second_member_rollno"] . "</td>
-                <td>" . (!empty($row["second_member_bonafide"]) ? "<a href='../" . htmlspecialchars($row["second_member_bonafide"]) . "' target='_blank' class='view-btn'>View</a>" : "N/A") . "</td>
+                <td>" . (!empty($row["second_member_bonafide"]) ? "<a href='" . htmlspecialchars($row["second_member_bonafide"]) . "' target='_blank' class='view-btn'>View</a>" : "N/A") . "</td>
                 <td>" . (!empty($row["third_member_name"]) ? $row["third_member_name"] : "N/A") . "</td>
                 <td>" . (!empty($row["third_member_rollno"]) ? $row["third_member_rollno"] : "N/A") . "</td>
-                <td>" . (!empty($row["third_member_bonafide"]) ? "<a href='../" . htmlspecialchars($row["third_member_bonafide"]) . "' target='_blank' class='view-btn'>View</a>" : "N/A") . "</td>
+                <td>" . (!empty($row["third_member_bonafide"]) ? "<a href='" . htmlspecialchars($row["third_member_bonafide"]) . "' target='_blank' class='view-btn'>View</a>" : "N/A") . "</td>
                 <td>" . (!empty($row["fourth_member_name"]) ? $row["fourth_member_name"] : "N/A") . "</td>
                 <td>" . (!empty($row["fourth_member_rollno"]) ? $row["fourth_member_rollno"] : "N/A") . "</td>
-                <td>" . (!empty($row["fourth_member_bonafide"]) ? "<a href='../" . htmlspecialchars($row["fourth_member_bonafide"]) . "' target='_blank' class='view-btn'>View</a>" : "N/A") . "</td>
+                <td>" . (!empty($row["fourth_member_bonafide"]) ? "<a href='" . htmlspecialchars($row["fourth_member_bonafide"]) . "' target='_blank' class='view-btn'>View</a>" : "N/A") . "</td>
                 <td>" . $row["phone_no"] . "</td>
                 <td>" . $row["alt_phone_no"] . "</td>
                 <td>" . $row["email"] . "</td>
