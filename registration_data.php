@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['admin_id'])) {
-    echo "<script>alert('Login successful! Redirecting...');window.location.href='admin_login_form,html';</script>";
+    echo "<script>alert('Login successful! Redirecting...');window.location.href='admin_login_form.html';</script>";
     exit();
 }
 
@@ -223,7 +223,7 @@ Number of Unique Members: " . $uniqueCount . "
 </div>";
 } else {
     echo "<p style='text-align: center;'>Zero Number of Unique participants.</p>";
-}
+} 
 
 echo "<div class='d' style='
     text-align: center; 
